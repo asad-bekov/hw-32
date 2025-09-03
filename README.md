@@ -79,7 +79,7 @@ docker-compose up -d
 docker-compose ps
 ```
 
-![docker ps](https://github.com/asad-bekov/hw-32/blob/main/img/2.png)
+![docker ps](https://github.com/asad-bekov/hw-32/blob/main/img/2.PNG)
 
 ---
 
@@ -89,13 +89,13 @@ docker-compose ps
    ```bash
    curl -X POST -H 'Content-Type: application/json'      -d '{"login":"bob", "password":"qwe123"}'      http://localhost:8081/v1/token
    ```
-   ![token](https://github.com/asad-bekov/hw-32/blob/main/img/3.png)
+   ![token](https://github.com/asad-bekov/hw-32/blob/main/img/3.PNG)
 
 2. **Защищенный эндпоинт — загрузка файла**
    ```bash
    curl -X POST -H 'Authorization: Bearer token'      -H 'Content-Type: octet/stream'      --data-binary @/etc/hosts      http://localhost:8081/v1/upload
    ```
-   ![upload](https://github.com/asad-bekov/hw-32/blob/main/img/4.png)
+   ![upload](https://github.com/asad-bekov/hw-32/blob/main/img/4.PNG)
 
 3. **Дополнительные тесты**
    - Получение информации о пользователе:
@@ -108,8 +108,8 @@ docker-compose ps
      ```
 
 Логи работы системы:  
-![logs](https://github.com/asad-bekov/hw-32/blob/main/img/5.png)  
-![logs](https://github.com/asad-bekov/hw-32/blob/main/img/5.1.png)
+![logs](https://github.com/asad-bekov/hw-32/blob/main/img/5.PNG)  
+![logs](https://github.com/asad-bekov/hw-32/blob/main/img/5.1.PNG)
 
 ---
 
